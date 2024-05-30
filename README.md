@@ -1,4 +1,4 @@
-# health
+# Mental Wellness Companion App
 
 A new Flutter project.
 
