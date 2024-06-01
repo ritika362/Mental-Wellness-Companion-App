@@ -44,7 +44,7 @@ Flutter based Mental Wellness Companion Mobile App designed to promote mental we
 - Responsive layout for different screen sizes
 
 
-## Testing:
+## Testing
 - Unit testing for individual components and functions
 - Integration testing for testing interactions between components
 - Widget testing for UI components
