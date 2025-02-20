@@ -12,7 +12,7 @@ class NotesScreen extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           title,
-          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+          style: const TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.white,
         elevation: 10.0,
@@ -21,7 +21,7 @@ class NotesScreen extends StatelessWidget {
         padding: const EdgeInsets.all(40.0),
         child: Text(
           content,
-          style: TextStyle(fontSize: 20),
+          style: const TextStyle(fontSize: 20),
         ),
       ),
     );

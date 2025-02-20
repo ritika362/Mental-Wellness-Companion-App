@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:health/home/add_reminder_screen.dart';
+import 'package:health/home/reminder_screen.dart';
 import 'package:health/providers/mood_provider.dart';
 import 'package:health/models/mood.dart';
 import 'package:provider/provider.dart';
 import '../../providers/reminder_provider.dart';
 import 'package:health/navigation_bar.dart';
-import 'mood_tracker_screen.dart';
-import 'reminder_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   @override
@@ -163,6 +162,20 @@ class HomeScreen extends StatelessWidget {
                     },
                   ),
                 ),
+                SizedBox(
+                  height: 20,
+                ),
+                TextButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => ReminderScreen(),
+                      ),
+                    );
+                  },
+                  child: Text('View all reminders'),
+                )
               ],
             ),
           ),
@@ -175,25 +188,6 @@ class HomeScreen extends StatelessWidget {
         },
         child: const Icon(Icons.add),
       ),
-
-      /*
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text('Reminders'),
-                ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ReminderScreen()),
-                    );
-                  },
-                  child: Text('Add Reminder'),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),*/
       bottomNavigationBar: NavBar(),
     );
   }

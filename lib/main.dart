@@ -29,9 +29,9 @@ class MentalWellnessCompanionApp extends StatelessWidget {
       home: SplashScreen(),
       initialRoute: '/',
       routes: {
-        // '/': (context) => HomeScreen(),
+        '/': (context) => HomeScreen(),
         '/add_reminder': (context) => AddReminderScreen(),
-        // '/reminders': (context) => ReminderScreen(),
+        '/reminders': (context) => ReminderScreen(),
         '/mood-tracking': (context) => MoodTrackerScreen(),
       },
     );
